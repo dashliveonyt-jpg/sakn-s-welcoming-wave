@@ -47,7 +47,7 @@ const Index = () => {
         </div>
       ) : (
         <div className="animate-fade-in flex items-center justify-center">
-          <h1 className="text-2xl md:text-3xl font-semibold tracking-wide flex gap-[0.15em]">
+          <h1 className="text-2xl md:text-3xl font-semibold tracking-normal flex">
             {"Coming Soon".split("").map((char, i) => (
               <span
                 key={i}
