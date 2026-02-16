@@ -146,3 +146,16 @@ All colors MUST be HSL.
 .animate-fade-in {
   animation: fade-in-up 0.8s ease-out both;
 }
+
+@keyframes wavy-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.wavy-letter {
+  animation: wavy-float 2s ease-in-out infinite;
+}

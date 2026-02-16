@@ -46,12 +46,20 @@ const Index = () => {
           </div>
         </div>
       ) : (
-        <div className="animate-fade-in">
-          <h1
-            className="text-5xl md:text-7xl font-bold tracking-tight"
-            style={{ color: "rgba(255,255,255,0.9)" }}
-          >
-            Coming Soon
+        <div className="animate-fade-in flex items-center justify-center">
+          <h1 className="text-2xl md:text-3xl font-semibold tracking-wide flex gap-[0.15em]">
+            {"Coming Soon".split("").map((char, i) => (
+              <span
+                key={i}
+                className="wavy-letter inline-block"
+                style={{
+                  color: "rgba(255,255,255,0.85)",
+                  animationDelay: `${i * 0.08}s`,
+                }}
+              >
+                {char === " " ? "\u00A0" : char}
+              </span>
+            ))}
           </h1>
         </div>
       )}
