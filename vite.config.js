@@ -4,14 +4,7 @@ import path from 'path';
 import { componentTagger } from 'lovable-tagger';
 
 export default defineConfig(({ mode }) => ({
-  base: '/Lovable-Project/', // <--- Change to your repo name, including slashes
-  server: {
-    host: '::',
-    port: 8080,
-    hmr: {
-      overlay: false,
-    },
-  },
+  base: '/sakn-s-welcoming-wave/', // <--- EXACT repo name, including slashes
   plugins: [react(), mode === 'development' && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
